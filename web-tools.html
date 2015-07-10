@@ -31,7 +31,7 @@
 
   <script>
   function extractInterface() {
-      var regex = /\s*public\s+([^\s]+\s+[^\s]+\(.*\)).*/;
+      var regex = /\s*public\s+([^\s]+\s+[^\s]+\(.*\)[^{]*)\s*{/;
       var lines = $('#java-code-input').val().split('\n');
       var output = '';
       lines.forEach(function(line) {
