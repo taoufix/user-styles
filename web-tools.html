@@ -7,8 +7,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     
 <style>
+/* Text */
+body {
+  font-family: Sans-Serif;
+}
+.big-text {
+    font-weight: bold;
+    font-size: 2em;
+}
+/* Bloc */
 .entry {
     display: none;
+}
+.columns {
+    display: flex;
+}
+.code-area {
+    monospace;
+    width: 100%;
 }
 </style>
 
@@ -23,12 +39,13 @@
 
 <div id="extract-interface" class="entry" >
   <h2>Extract interface</h2>
-  <textarea id="java-code-input" rows="25" cols="100"></textarea>
-  <br/>
-  <button onclick="extractInterface()">Extract</button>
-  <br/>
-  <textarea id="java-code-output" rows="10" cols="100"></textarea>
 
+  <div class="columns">
+      <textarea id="java-code-input" class="code-area" rows="25" ></textarea>
+      <button class="big-text" onclick="extractInterface()">→</button>
+      <textarea id="java-code-output" class="code-area" rows="10" ></textarea>
+  </div><!-- .columns -->
+  
   <script>
   function extractInterface() {
       var regex = /\s*public\s+([^\s]+\s+[^\s]+\(.*\)[^{]*)\s*{/;
