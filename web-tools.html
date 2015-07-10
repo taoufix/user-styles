@@ -38,7 +38,7 @@
           console.log(line);
           var match = regex.exec(line);
           if (match != null) {
-              output += match[1] + ';\n';
+              output += match[1].trim() + ';\n';
           }
       });
       $('#java-code-output').val(output);
