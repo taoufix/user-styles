@@ -2,7 +2,7 @@
 // @name        HN Tweaks
 // @namespace   http://taoufix.com/hackernews
 // @include     https://news.ycombinator.com/*
-// @version     2.0.1
+// @version     2.0.2
 // @grant       none
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // ==/UserScript==
@@ -80,10 +80,14 @@ $('a.expand').click(expandChildren);
 
 // Points
 var MIN_SCORE = 100;
+var BEST_SCORE = 500;
 var SCORE_REGEXP = /(\d+) points/;
 $('span.score').each(function() {
   var match = SCORE_REGEXP.exec($(this).text());
   if (match != null && parseInt(match[1]) >= MIN_SCORE) {
     $(this).css('color', '#ff3030');
+    if (parseInt(match[1]) >= BEST_SCORE) {
+      $(this).css('font-weight', 'bold');
+    }
   }
 });
