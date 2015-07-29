@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        HN Tweaks
 // @namespace   http://taoufix.com/hackernews
-// @include     https://news.ycombinator.com/item*
+// @include     https://news.ycombinator.com/*
 // @version     2.0.1
 // @grant       none
 // @require     https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
@@ -14,19 +14,21 @@ var INDENT = 40;
 $( "<style>.expand { font-family: monospace; }</style>" ).appendTo( "head" )
 
 // For each comment
-$('tr.athing:gt(0)').each(function() {
+if (window.location.pathname = '/item') {
+  $('tr.athing:gt(0)').each(function() {
+    
+    // Add expand link
+    var $commhead = $(this).find('.comhead');
+    $commhead.html('[<a class="expand" href="#">+</a>]' + $commhead.html());
+    
+    // Collapse if not top most comment
+    var img = $(this).find('.ind img');
+    if (img.attr('width') > 0) {
+      $(this).toggle(false);
+    }
   
-  // Add expand link
-  var $commhead = $(this).find('.comhead');
-  $commhead.html('[<a class="expand" href="#">+</a>]' + $commhead.html());
-  
-  // Collapse if not top most comment
-  var img = $(this).find('.ind img');
-  if (img.attr('width') > 0) {
-    $(this).toggle(false);
-  }
-
-});
+  });
+}
 
 function expandChildren() {
   var $athing = $(this).closest('tr.athing');
