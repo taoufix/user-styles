@@ -14,7 +14,7 @@ var INDENT = 40;
 $( "<style>.expand { font-family: monospace; }</style>" ).appendTo( "head" )
 
 // For each comment
-if (window.location.pathname = '/item') {
+if (window.location.pathname === '/item') {
   $('tr.athing:gt(0)').each(function() {
     
     // Add expand link
