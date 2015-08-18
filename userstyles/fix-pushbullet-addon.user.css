@@ -1,0 +1,10 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("resource://.*/pushbullet/.*") {
+  #chat-holder {
+    bottom: 85px !important;
+  }
+  #push-right-top {
+    bottom: 80px !important;
+  }
+}
