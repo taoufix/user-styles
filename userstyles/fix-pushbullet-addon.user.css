@@ -1,10 +1,34 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document regexp("resource://.*/pushbullet/.*") {
+  
+  /*  Fix input field  */
   #chat-holder {
     bottom: 85px !important;
   }
-  #push-right-top {
+  #push-right-top, #sms-right-top.with-input {
     bottom: 80px !important;
+  }
+  
+  /*  Discrete colors  */
+  #header {
+    background-color: #eee !important;
+    padding: 7px 7px 0px 7px !important;
+    color: #111 !important;
+  }
+  .tab {
+    padding: 5px 10px !important;
+    color: #777 !important;
+  }
+  .tab:hover {
+    color: #38a06d !important;
+    background-color: #eee !important;
+  }
+  .tab.selected {
+    color: #777 !important;
+    border-bottom: 3px solid #38a06d !important;
+  }
+  #bullet {
+    display: none !important;
   }
 }
