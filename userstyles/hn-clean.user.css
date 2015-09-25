@@ -1,0 +1,11 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+ 
+@-moz-document domain("news.ycombinator.com") {
+  
+  * { background-color: white !important; }
+  
+  .ind { background-color: #eee !important; }
+  
+  img[src="y18.gif"] { visibility: hidden !important; }
+  
+}
