@@ -2,24 +2,35 @@
 
 @-moz-document regexp("https?://.*") {
   
-  /* Global */
+  /*
+   * Global 
+   */
   * {
     color: #333 !important;
     background-color: #fff !important;
-    border-color: #fff !important;
+    border-color: transparent !important;
   }
-
-  /* Tables */
+  /* Fix for overlaping text */
+  h1,   h2,   h3,   h4,   h5,   h6,
+  h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+    background-color: transparent !important;
+  }
+  
+  /*
+   * Tables
+   */
   td {
-    border: 1px solid #999 !important;
+/*      border: 1px solid #999 !important; */
   }
 
-  /* Images */
+  /*
+   * Images 
+   */
   * {
     background-image: none !important;
   }
   img {
-    opacity: 0.1 !important;
+     opacity: 0.1 !important;
      filter: grayscale(100%) !important;
   }
   svg {
@@ -29,9 +40,21 @@
     filter: grayscale(100%) !important;
   }
 
-  /* Links */
+  /* 
+   * Links
+   */
   a {
      color: #1A0DAB !important;
   }
- 
+  a:hover {
+    text-decoration: underline !important;
+  }
+  
+  /*
+   * Input
+   */
+  textarea, input, select {
+    border: 1px solid #999 !important;
+  }
+  
 }
