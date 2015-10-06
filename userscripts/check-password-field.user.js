@@ -2,7 +2,7 @@
 // @name        Check passoword field is safe
 // @namespace   htt://taoufix.com/password
 // @include     *
-// @version     1.2.0
+// @version     1.2.1
 // @grant       none
 // @require     http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // ==/UserScript==
@@ -34,4 +34,7 @@ $('input[type=password]').each(function () {
     }
     
     $(this).css('background-color', ok ? '#ccffcc' : '#ffbbbb');
+    
+    // Show form action on mouse hover.
+    $(this).attr('title', 'form action: ' + action);
 });
