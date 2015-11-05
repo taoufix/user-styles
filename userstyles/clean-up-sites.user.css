@@ -1,0 +1,146 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document
+domain("azlyrics.com"),
+domain("medium.com"),
+domain("al-kanz.org"),
+domain("hackaday.com"),
+domain("oumma.com") {
+  
+  /* ------------------------------------------------------ *
+   * Global 
+   * ------------------------------------------------------ */
+  
+  * {
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: transparent !important;
+  }
+  
+  /* Fix for overlaping text */
+  h1,   h2,   h3,   h4,   h5,   h6,
+  h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
+    background-color: transparent !important;
+  }
+  
+  /* ------------------------------------------------------ *
+   * Images
+   * ------------------------------------------------------ */
+  
+  * {
+    background-image: none !important;
+  }
+  
+  img {
+     opacity: 0.1 !important;
+     filter: grayscale(100%) !important;
+  }
+
+  img:hover {
+     opacity: 0.5 !important;
+     filter: grayscale(50%) !important;
+  }
+  
+  svg {
+    visibility: hidden !important;
+  }
+  
+  input[type="image"] {
+    filter: grayscale(100%) !important;
+  }
+
+  /* ------------------------------------------------------ *
+   * Videos
+   * ------------------------------------------------------ */
+  
+  /* Youtube */
+  iframe[src*="youtube.com"] {
+     opacity: 0.1 !important;
+     filter: grayscale(100%) !important;
+  }
+
+  iframe[src*="youtube.com"]:hover {
+     opacity: 0.5 !important;
+     filter: grayscale(50%) !important;
+  }
+  
+  /* ------------------------------------------------------ *
+   * Links 
+   * ------------------------------------------------------ */
+  
+  a {
+    text-decoration: underline !important;
+  }
+  
+  /* ------------------------------------------------------ *
+   * Input 
+   * ------------------------------------------------------ */
+  textarea, input, select {
+    border: 1px solid #999 !important;
+  }
+  
+}
+
+/* ------------------------------------------------------ *
+ * Domain spesific rules 
+ * ------------------------------------------------------ */
+
+@-moz-document domain("hackaday.com") {
+  .site-branding .site-title a,
+  .featured-slides-title,
+  h1, h1 > a,
+  h2, h2 > a{
+    font-size: 2rem !important;
+  }
+}
+
+@-moz-document domain("reddit.com") {
+  a.ListingContent-image, a.MobileButton, a.TopNav-a {
+     opacity: 0.1 !important;
+     filter: grayscale(100%) !important;
+  }
+
+  a.ListingContent-image:hover {
+     opacity: 0.5 !important;
+     filter: grayscale(50%) !important;
+  }
+}
+
+@-moz-document domain("twitter.com") {
+ .OldMedia {
+     opacity: 0.1 !important;
+     filter: grayscale(75%) !important;
+ }
+ .OldMedia:hover {
+     opacity: 0.75 !important;
+     filter: grayscale(0%) !important;
+ }
+  
+ img.avatar {
+   opacity: 0.25 !important;
+ }
+
+}
+
+@-moz-document domain("youtube.com") {
+  
+  /* IMAGES */
+  #movie_player, #watch-appbar-playlist, /* player */
+  .thumb-wrapper, .yt-pl-thumb /* thumbs */
+  {
+     opacity: 0.1 !important;
+     filter: grayscale(75%) !important;
+  }
+  
+  #movie_player:hover, #watch-appbar-playlist:hover, /* player */
+  .thumb-wrapper:hover, .yt-pl-thumb:hover /* thumbs */
+  {
+     opacity: 0.75 !important;
+     filter: grayscale(0%) !important;
+  }
+  
+  /* COMMENTS */
+  #watch-discussion {
+    display: none !important;
+  }
+}
