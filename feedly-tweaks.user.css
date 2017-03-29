@@ -1,0 +1,13 @@
+@-moz-document domain("feedly.com") {
+
+/* Make selecedt entry readable in compact mode. */
+.fx .entry.selected .title {
+    color: black !important;
+    font-weight: bold !important;
+}
+
+/* Disable upgrade button */
+#searchBarFX > div > button {
+	display: none !important;
+}
+}
