@@ -1,0 +1,22 @@
+@-moz-document domain("youtube.com") {
+/* IMAGES */
+  #movie_player, #watch-appbar-playlist, /* player */
+  .thumb-wrapper, .yt-pl-thumb, /* thumbs */
+  .yt-thumb-clip /* Avatar */
+  {
+     opacity: 0.1 !important;
+     filter: grayscale(75%) !important;
+  }
+  
+  #movie_player:hover, #watch-appbar-playlist:hover, /* player */
+  .thumb-wrapper:hover, .yt-pl-thumb:hover /* thumbs */
+  {
+     opacity: 0.75 !important;
+     filter: grayscale(0%) !important;
+  }
+  
+  /* COMMENTS */
+  #watch-discussion {
+    display: none !important;
+  }
+}
