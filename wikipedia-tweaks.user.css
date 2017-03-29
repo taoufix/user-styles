@@ -1,0 +1,6 @@
+@-moz-document domain("wikipedia.org") {
+  #content {
+  	width: 800px;
+      margin: auto;
+  }
+}
