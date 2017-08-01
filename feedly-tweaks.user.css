@@ -1,3 +1,6 @@
+/*
+ src: https://github.com/taoufix/user-styles/blob/master/feedly-tweaks.user.css
+*/
 @-moz-document domain("feedly.com") {
 
 /* Make selecedt entry readable in compact mode. */
