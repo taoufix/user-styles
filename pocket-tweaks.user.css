@@ -1,0 +1,13 @@
+@-moz-document domain("getpocket.com") {
+
+.RIL_IMG {
+    opacity: 0.02 !important;
+    filter: grayscale(75%) !important;
+}
+
+.RIL_IMG:hover {
+    opacity: 0.75 !important;
+    filter: grayscale(0%) !important;
+}
+
+}
