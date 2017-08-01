@@ -1,6 +1,6 @@
 @-moz-document domain("rcijeux.fr") {
-.cell__definition--highlight
-.cell__definition--background {
-    fill: black;
-}
+    .cell__definition--highlight
+    .cell__definition--background {
+        fill: black;
+    }
 }
