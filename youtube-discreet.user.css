@@ -1,3 +1,6 @@
+/*
+  src: https://github.com/taoufix/user-styles/blob/master/youtube-discreet.user.css
+ */
 @-moz-document domain("youtube.com") {
 /* IMAGES */
   #movie_player, #watch-appbar-playlist, /* player */
