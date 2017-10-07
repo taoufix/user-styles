@@ -1,9 +1,11 @@
-/* 
-  src: https://github.com/taoufix/user-styles/blob/master/dark-hn.user.css 
-*/
 @-moz-document domain("news.ycombinator.com") {
+/* header: "best" link */
+.pagetop font {
+	color: #000 !important;
+}
+
 body, #hnmain, textarea, input  {
-    background-color: #222 !important;
+    background-color: #000 !important;
     color: #ccc !important;
 }
 
@@ -11,7 +13,7 @@ body, #hnmain, textarea, input  {
 .comment .c00,
 .yclinks a,
 .c00, .c00 a:link {
-    color: #ccc !important;
+    color: #ddd !important;
 }
 
 .title a:visited,
