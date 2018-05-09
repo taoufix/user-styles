@@ -1,0 +1,19 @@
+@-moz-document domain("cnn.io") {
+body {
+    width: 800px;
+    margin: auto;
+    background-color: #333;
+    color: #ddd;
+    line-height: 2em;
+}
+
+a {
+    color: #aaf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+}
