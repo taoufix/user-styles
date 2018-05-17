@@ -1,6 +1,9 @@
-/*
-  src: https://github.com/taoufix/user-styles/blob/master/20min-mots-fleches-tweaks.user.css
- */
+/* ==UserStyle==
+@name        20min mot fleches tweeks
+@namespace   taoufix.com/stylus/20min-mots-fleches-tweeks
+@version     1.0.0
+@author      taoufix
+==/UserStyle== */
 @-moz-document domain("rcijeux.fr") {
     .cell__definition--highlight
     .cell__definition--background {
