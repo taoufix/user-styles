@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name        Pretty Text News
+@namespace   taoufix.com/stylus/text-news
+@version     1.0.0
+@description Make text news (CNN, NPR) prettier
+@author      taoufix
+==/UserStyle== */
 @-moz-document domain("lite.cnn.io"), domain("text.npr.org") {
 body {
     width: 800px;
