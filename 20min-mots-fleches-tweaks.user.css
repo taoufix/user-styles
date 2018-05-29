@@ -6,6 +6,6 @@
 ==/UserStyle== */
 @-moz-document domain("rcijeux.fr") {
     .cell__definition--highlight .cell__definition--background {
-        fill: black !important;;
+        fill: black !important;
     }
 }
