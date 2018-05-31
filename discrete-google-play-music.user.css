@@ -1,3 +1,9 @@
+/* ==UserStyle==
+@name        Discrete Google Play Music
+@namespace   taoufix.com/stylus/discrete-google-play-music
+@version     1.0.0
+@author      taoufix
+==/UserStyle== */
 @-moz-document url-prefix("https://play.google.com/music/") {
 * {
     background-color: black !important;
