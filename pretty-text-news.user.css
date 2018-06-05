@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Pretty Text News
 @namespace   taoufix.com/stylus/text-news
-@version     1.0.3
+@version     1.0.4
 @description Make text news (CNN, NPR) prettier
 @author      taoufix
 ==/UserStyle== */
@@ -24,10 +24,10 @@ domain("text.npr.org") {
         text-decoration: underline;
     }
     ul {
-        padding: 0;
+        list-style-type: none;
+        padding: 10px 0;
     }
     li {
-        display: inline-block;
-        margin: 0.5em 0;
+        margin: 1em 0;
     }
 }
