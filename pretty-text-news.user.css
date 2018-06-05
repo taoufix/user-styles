@@ -1,30 +1,33 @@
 /* ==UserStyle==
 @name        Pretty Text News
 @namespace   taoufix.com/stylus/text-news
-@version     1.0.2
+@version     1.0.3
 @description Make text news (CNN, NPR) prettier
 @author      taoufix
 ==/UserStyle== */
-@-moz-document domain("lite.cnn.io"), domain("text.npr.org") {
-body {
-    max-width: 800px;
-    margin: auto;
-    background-color: #222;
-    color: #bbb;
-    line-height: 2em;
-    font-family: sans-serif;
-}
-
-a {
-    color: #aaf;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-li {
-    display: inline-block;    
-}
+@-moz-document domain("lite.cnn.io"),
+domain("text.npr.org") {
+    body {
+        max-width: 800px;
+        margin: auto;
+        padding: 1em;
+        background-color: #222;
+        color: #bbb;
+        line-height: 1.25em;
+        font-family: sans-serif;
+    }
+    a {
+        color: #c2c2ee;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
 }
