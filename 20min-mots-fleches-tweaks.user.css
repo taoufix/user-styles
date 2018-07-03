@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        20min mot fleches tweeks
 @namespace   taoufix.com/stylus/20min-mots-fleches-tweeks
-@version     1.0.2
+@version     1.0.3
 @author      taoufix
 ==/UserStyle== */
 @-moz-document domain("rcijeux.fr") {
@@ -9,9 +9,14 @@
         fill: black !important;
     }
     .game {
-        padding: 15px !important;
+        padding: 10px !important;
     }
     .app {
-        max-width: 880px;
+        max-width: 880px !important;
+    }
+    .dots--dash {
+        stroke-dasharray: 14 !important;
+        stroke: red !important;
+        stroke-width: 5px !important;
     }
 }
