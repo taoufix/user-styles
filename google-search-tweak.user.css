@@ -1,3 +1,8 @@
+/* ==UserStyle==
+@name        Fix Google Search
+@namespace   taoufix.com/stylus/google-search-tweaks
+@version     1.0.0
+@author      taoufix
 @-moz-document url-prefix("google.com") {
   /* Disable Logo click: annoying on Firefox mobile */
   div[aria-label="Google"] {
