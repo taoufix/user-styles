@@ -1,0 +1,7 @@
+@-moz-document url-prefix("google.com") {
+  /* Disable Logo click: annoying on Firefox mobile */
+  div[aria-label="Google"] {
+      display: none;
+  }
+
+}
