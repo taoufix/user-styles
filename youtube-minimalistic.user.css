@@ -1,3 +1,9 @@
+/* ==UserStyle==
+@name        Youtube minimalistic
+@namespace   taoufix.com/stylus/youtube-minimalistic
+@version     1.0.0
+@author      taoufix
+==/UserStyle== */
 @-moz-document domain("youtube.com"), domain("youtu.be") {
 body {
     filter: grayscale(100%) opacity(25%);
