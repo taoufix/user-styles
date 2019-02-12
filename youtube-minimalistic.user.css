@@ -1,0 +1,17 @@
+@-moz-document domain("youtube.com"), domain("youtu.be") {
+body {
+    filter: grayscale(100%) opacity(25%);
+}
+
+#columns.ytd-watch-flexy {
+    width: 500px !important;
+    justify-content: left !important;
+    margin: 0 !important;
+}
+
+
+video {
+    width: 240px !important; 
+    height: 180px !important; 
+}
+}
