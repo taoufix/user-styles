@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Pretty Text News
 @namespace   taoufix.com/stylus/text-news
-@version     1.0.6
+@version     1.0.7
 @description Make text news (CNN, NPR) prettier
 @author      taoufix
 ==/UserStyle== */
@@ -19,14 +19,9 @@ domain("text.npr.org") {
     a {
         color: #c2c2ee;
         text-decoration: none;
-        padding: 13px;
-        border: 1px solid #555;
-        border-radius: 5px;
-        width: 100%;
-        display: block;
     }
     a:hover {
-        background: #333;
+        text-decoration: underline;
     }
     ul {
         list-style-type: none;
@@ -35,4 +30,15 @@ domain("text.npr.org") {
     li {
         margin: 1em 0;
     }
+    li a {
+        padding: 13px;
+        border: 1px solid #555;
+        border-radius: 5px;
+        width: 100%;
+        display: block;
+    }
+    li a:hover {
+        background: #333;
+    }
+
 }
