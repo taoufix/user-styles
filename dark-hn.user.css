@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name        Dark Hacker News
+@namespace   taoufix.com/stylus/hn-dark
+@version     1.0.0
+@description Dark Hacker News
+@author      taoufix
+==/UserStyle== */
 @-moz-document domain("news.ycombinator.com") {
 /* header: "best" link */
 .pagetop font {
