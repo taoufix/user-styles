@@ -1,0 +1,98 @@
+/* ==UserStyle==
+@name        Dark WhatsApp Web
+@namespace   taoufix.com/stylus/whatsappweb-dark
+@version     1.0.0
+@description Dark WhatsApp Web
+@author      taoufix
+==/UserStyle== */
+@-moz-document domain("web.whatsapp.com") {
+body {
+    background: #000 !important;
+}
+
+._18vxA {
+    opacity: 0.05 !important;
+}
+._18vxA:hover {
+    opacity: 1 !important;
+}
+
+.app {
+    margin: 0 !important;
+    top: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/****** Chat panel */
+/* Messages */
+.message-out > div > div {
+    color: white !important;
+    background-color: #2d4d39 !important;
+}
+.message-in > div > div {
+    color: white !important;
+    background-color: #333 !important;
+}
+.tail-container {
+    background-image: none !important;
+}
+
+/* Days */
+html[dir] .a7otO {
+  background-color: #333 !important;
+  color: white !important;
+}
+
+
+/****** Friends panel */
+#side header {
+    display: none;
+}
+
+/* Search */
+._2HS9r {
+    display: none;
+}
+
+#pane-side, ._2UaNq {
+    background: #222 !important;
+    border: none !important;
+}
+
+._2UaNq * {
+    color: white !important;
+    border: none !important;
+}
+
+/* Active Friend header */
+._3fs0K {
+    background: #222 !important;
+}
+._3fs0K * {
+    color: white !important;
+}
+
+/* Text input */
+footer * {
+    background: #222 !important;
+}
+.selectable-text {
+    color: white !important;
+}
+
+/* Go down button */
+._3KRbU._3sLGI {
+    background: #222 !important;
+    color: white !important;
+}
+
+/* links */
+._1SsXF {
+    background: #111 !important;
+}
+._1SsXF span {
+    color: #aaa !important;
+}
+
+}
