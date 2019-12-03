@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name        Better Trello
+@namespace   taoufix.com/stylus/better-trello
+@version     1.0.0
+@description Show card numbers, card counts
+@author      taoufix
+==/UserStyle== */
 @-moz-document domain("trello.com") {
 .card-short-id.hide {
   display: inline-block !important;
