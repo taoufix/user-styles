@@ -1,6 +1,10 @@
-/*
- src: https://github.com/taoufix/user-styles/blob/master/pocket-tweaks.user.css
-*/
+/* ==UserStyle==
+@name        Better Pocket
+@namespace   taoufix.com/stylus/better-pocket
+@version     1.0.1
+@description Better Pocket
+@author      taoufix
+==/UserStyle== */
 @-moz-document domain("getpocket.com") {
 
 .RIL_IMG {
