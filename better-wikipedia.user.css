@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        Better Wikipedia
+@namespace   taoufix.com/stylus/better-wikipedia
+@version     1.0.0
+@description Better Wikipedia
+@author      taoufix
+==/UserStyle== */
+@-moz-document domain("wikipedia.org") {
+  #content {
+  	width: 800px;
+      margin: auto;
+  }
+}

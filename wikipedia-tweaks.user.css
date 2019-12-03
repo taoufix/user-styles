@@ -1,9 +1,0 @@
-/*
-  src: https://github.com/taoufix/user-styles/blob/master/wikipedia-tweaks.user.css
- */
-@-moz-document domain("wikipedia.org") {
-  #content {
-  	width: 800px;
-      margin: auto;
-  }
-}
