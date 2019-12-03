@@ -1,0 +1,12 @@
+@-moz-document domain("trello.com") {
+.card-short-id.hide {
+  display: inline-block !important;
+  margin-right: 4px !important;
+  font-weight: bold;
+}
+
+.list-header-num-cards.hide {
+  display: inline-block !important;
+}
+
+}
