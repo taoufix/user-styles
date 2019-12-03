@@ -1,5 +1,0 @@
-@-moz-document regexp(".*\\.mp3") {
-video {
-    width: 1024px !important;
-}
-}

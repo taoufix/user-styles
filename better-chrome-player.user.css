@@ -1,0 +1,11 @@
+/* ==UserStyle==
+@name        Better Chrome Player
+@namespace   taoufix.com/stylus/better-chrome-player
+@version     1.0.1
+@description Better Chrome Player
+@author      taoufix
+==/UserStyle== */@-moz-document regexp(".*\\.mp3") {
+video {
+    width: 1024px !important;
+}
+}
