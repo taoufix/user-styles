@@ -1,6 +1,10 @@
-/*
- src: https://github.com/taoufix/user-styles/blob/master/feedly-tweaks.user.css
-*/
+/* ==UserStyle==
+@name        Better Feedly
+@namespace   taoufix.com/stylus/better-feedly
+@version     1.0.0
+@description Better Feedly
+@author      taoufix
+==/UserStyle== */
 @-moz-document domain("feedly.com") {
 
 /* Make selecedt entry readable in compact mode. */
