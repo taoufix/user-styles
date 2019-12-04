@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        Dark Gmail
+@namespace   taoufix.com/stylus/dark-gmail
+@version     1.0.0
+@description Dark Gmail (To use with Gmail's Dark Theme)
+@author      taoufix
+==/UserStyle== */
+@-moz-document domain("mail.google.com") {
+  table.Bs {
+    filter: invert(100%);
+  }
+
+  table.Bs img {
+    filter: invert(100%);
+  }
+}
