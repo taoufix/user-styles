@@ -1,0 +1,49 @@
+/* ==UserStyle==
+@name        Dark WhatsApp Tweaks
+@namespace   taoufix.com/stylus/dark-whatsapp-tweaks
+@version     1.0.0
+@description Dark WhatsApp Tweaks
+@author      taoufix
+==/UserStyle== */
+@-moz-document domain("web.whatsapp.com") {
+/* Page width */
+._3fUe9 {
+  width: 800px !important;
+}
+
+/* Remove green header */
+._1FPJ-::after {
+  background-color: initial !important;
+}
+
+._3vpWv,
+.xD91K,
+._0LqQ {
+  display: none !important;
+}
+
+._19RFN {
+  font-size: 0.8em !important;
+  color: #999 !important;
+}
+
+/* Images */
+._1ays2 img {
+  filter: opacity(5%);
+}
+/* Emogies */
+img.copyable-text {
+  filter: opacity(50%);
+}
+
+
+._1ays2 img:hover {
+  filter: opacity(77%);
+}
+
+/* Videos */
+._2IYG6,
+._3Z-uK {
+  filter: invert(100%) !important;
+}
+}
