@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name        Invert Colors
+@namespace   taoufix.com/stylus/dark-invert-colors
+@version     1.0.0
+@description Invert page colors
+@author      taoufix
+==/UserStyle== */
+@-moz-document 
+  url("about:blank"),
+  domain("docs.google.com")
+  {
+html {
+  filter: invert(100%) !important;  
+}
+
+body {
+  background-image: none !important;
+  background-color: black !important;
+}
+
+body img:hover  {
+  filter: invert(100%) !important;  
+}
+}
