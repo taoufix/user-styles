@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name        Dark Reader
+@namespace   taoufix.com/stylus/20min-mots-fleches-tweeks
+@version     1.0.0
+@author      taoufix
+==/UserStyle== */
+@-moz-document domain("mailchi.mp") {
+html,
+body,
+* {
+  color: #eee !important;
+  background: none !important;
+  background-color: #111 !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+a {
+  text-decoration: underline !important;
+}
+
+}
