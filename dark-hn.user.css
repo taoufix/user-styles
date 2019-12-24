@@ -1,79 +1,103 @@
 /* ==UserStyle==
 @name        Dark Hacker News
 @namespace   taoufix.com/stylus/hn-dark
-@version     1.0.1
+@version     1.0.2
 @description Dark Hacker News
 @author      taoufix
 ==/UserStyle== */
 @-moz-document domain("news.ycombinator.com") {
 
-  * {
-    outline: 0 !important;
-  }
+    :root {
+        --light: #eee;
+        --dark: #111;
+        --gray: #777;
+        --border: #777;
+        --visited: #99f;
+    }
 
-  /* header: "best" link */
-  .pagetop font {
-    color: #000 !important;
-  }
+    * {
+        outline: 0 !important;
+    }
 
-  body,
-  #hnmain,
-  textarea,
-  input {
-    background-color: #000 !important;
-    color: #ccc !important;
-  }
-
-  textarea {
-    border: 1px solid #777 !important;
-    padding: 4px !important;
-  }
-
-  /* Add comment */
-  input {
-    border: 1px solid #777 !important;
-    padding: 5px 20px !important;
-    border-radius: 5px !important;
-  }
-  input::-moz-focus-inner {
-    border: 0;
-  }
-  input[type="submit"] {
-    cursor: pointer !important;
-  }
-  input[type="submit"]:active {
-    color: black !important;
-    background-color: orangered !important;
-  }
+    /* Scrollbars */
+    /* Firefox */
+    body {
+        /* csslint allow: known-properties */
+        scrollbar-width: thin; 
+        /* csslint allow: known-properties */
+        scrollbar-color: var(--gray)r transparent;
+    }
+    /* Chrome */
+    body::-webkit-scrollbar {
+        width: 5px;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--gray);
+    }
 
 
-  .title a,
-  .comment .c00,
-  .yclinks a,
-  .c00,
-  .c00 a:link {
-    color: #ddd !important;
-  }
+    /* Links */
+    a {
+        color: var(--light) !important;
+    }
 
-  .title a:visited,
-  .c00,
-  .c00 a:visited {
-    color: #99f !important;
-  }
+    /* Header */
+    #hnmain td {
+        background-color: var(--dark);
+    }
 
-  .subtext a {
-    color: #666 !important;
-  }
+    body,
+    #hnmain,
+    textarea,
+    input,
+    .fatitem td,
+    .pagetop,
+    .c00
+     {
+        background-color: var(--dark) !important;
+        color: var(--light) !important;
+    }
 
-  .comment {
-    border-left: 2px solid #555;
-    padding-left: 5px;
-  }
 
-  /* Fix text lenght */
-  .comment {
-    max-width: 650px !important;
-    font-size: 1.1em;
-    line-height: 1.5em;
-  }
+    textarea {
+        border: 1px solid var(--border) !important;
+        padding: 4px !important;
+    }
+
+    /* Add comment */
+    input {
+        border: 1px solid var(--border) !important;
+        padding: 5px 20px !important;
+        border-radius: 5px !important;
+    }
+    input::-moz-focus-inner {
+        border: 0;
+    }
+    input[type="submit"] {
+        cursor: pointer !important;
+    }
+    input[type="submit"]:active {
+        color: var(--dark) !important;
+        background-color: orangered !important;
+    }
+
+    .title a:visited {
+        color: var(--visited) !important;
+    }
+
+    .subtext a {
+        color: var(--gray) !important;
+    }
+
+    .comment {
+        border-left: 2px solid var(--gray);
+        padding-left: 5px;
+    }
+
+    /* Fix text lenght */
+    .comment {
+        max-width: 40rem !important;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
 }
