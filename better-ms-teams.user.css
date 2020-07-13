@@ -11,9 +11,28 @@
     color: yellow !important;
 }
 
+/* Make layout of messages in conversation mode the same as channel mode */
+.conversation-bubble-previous .conversation-start .self::before {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    position: absolute;
+    background-size: 32px;
+    
+    content: "🧔";
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    background: pink;
+    /*
+    content: "";
+    background-image: url('blob:https://teams.microsoft.com/UUID');
+    */
+}
+    
 message-list.chat-style .self .media-left ~ .ts-message-thread-body {
     padding-left: 42px;
-    
 }
 
 .chat-style .self .ts-message-thread-body {
