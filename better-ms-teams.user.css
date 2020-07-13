@@ -1,7 +1,15 @@
+/* ==UserStyle==
+@name        Better MS Teams
+@namespace   taoufix.com/stylus/better-ms-teams
+@version     1.0.0
+@description Better MS Teams
+@author      taoufix
+==/UserStyle== */
+@-moz-document domain("teams.microsoft.com") {
+    
 .ts-unread-channel {
     color: yellow !important;
 }
-
 
 message-list.chat-style .self .media-left ~ .ts-message-thread-body {
     padding-left: 42px;
@@ -31,4 +39,6 @@ div#ts-bottom-compose-identifier {
 
 .placeholder-item.message-body-width.self {
     right: initial;
+}
+
 }
