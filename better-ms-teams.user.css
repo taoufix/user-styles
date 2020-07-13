@@ -1,0 +1,34 @@
+.ts-unread-channel {
+    color: yellow !important;
+}
+
+
+message-list.chat-style .self .media-left ~ .ts-message-thread-body {
+    padding-left: 42px;
+    
+}
+
+.chat-style .self .ts-message-thread-body {
+    justify-content: initial;
+}
+
+.message-body-width {
+    width: 100%;
+}
+
+.list-wrap.list-wrap-v3.ts-message-list-container, 
+.ts-new-message-footer.new-message-common.rich-style-enabled,
+.extension-icons-container.new-message-common.compose-stripe.compose-stripe-flex-reverse,
+virtual-repeat>.list-wrap>*.item-wrap,
+div#ts-bottom-compose-identifier {
+    max-width: initial;
+}
+
+.ts-new-message-footer.new-message-common.rich-style-enabled,
+.extension-icons-container.new-message-common.compose-stripe.compose-stripe-flex-reverse {
+    margin: 0 3rem;
+}
+
+.placeholder-item.message-body-width.self {
+    right: initial;
+}
