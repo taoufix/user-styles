@@ -6,31 +6,37 @@
 @author      taoufix
 ==/UserStyle== */
 @-moz-document domain("teams.microsoft.com") {
-    
+
+/* Highlight self messages in channel mode, the same way as in conversation mode */
+.thread-body.self .message-body,
+.thread-body.self .message-body .message-actions-container,
+.conversation-common:not(.conversation-start) .thread-body.self .media-left {
+    background: #3a3b55 !important;
+}    
+
+/* More visibility for unread channel */    
 .ts-unread-channel {
     color: yellow !important;
 }
+
 
 /* Make layout of messages in conversation mode the same as channel mode */
 .conversation-bubble-previous .conversation-start .self::before {
     display: block;
     width: 32px;
     height: 32px;
+    background-size: 32px;
+    line-height: 32px;
+
     border-radius: 100%;
     position: absolute;
-    background-size: 32px;
     
-    content: "🧔";
-    font-size: 24px;
-    line-height: 32px;
+    content: "🧔🏻";
+    font-size: 23px;
     text-align: center;
-    background: pink;
-    /*
-    content: "";
-    background-image: url('blob:https://teams.microsoft.com/UUID');
-    */
+    background: #3a3b55;
 }
-    
+
 message-list.chat-style .self .media-left ~ .ts-message-thread-body {
     padding-left: 42px;
 }
