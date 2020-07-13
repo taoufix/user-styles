@@ -1,20 +1,19 @@
 /* ==UserStyle==
 @name        Better Feedly
 @namespace   taoufix.com/stylus/better-feedly
-@version     1.0.0
+@version     1.0.1
 @description Better Feedly
 @author      taoufix
 ==/UserStyle== */
 @-moz-document domain("feedly.com") {
 
-/* Make selecedt entry readable in compact mode. */
-.fx .entry.selected .title {
-    color: black !important;
-    font-weight: bold !important;
+/* Remove upgrade button */
+.small.primary.pro {
+    visibility: hidden !important;
 }
-
-/* Disable upgrade button */
-#searchBarFX > div > button {
-	display: none !important;
+	
+/* Remove Train Leo */
+div[data-uri='trainLeo'] {
+    visibility: hidden !important;
 }
 }
