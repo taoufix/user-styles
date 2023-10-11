@@ -1,20 +1,19 @@
 /* ==UserStyle==
 @name        Octordle Tweaks
 @namespace   taoufix.com/stylus/octordle-tweaks
-@version     0.1
+@version     0.2
 @description Octordle Tweaks
 @author      taoufix
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.britannica.com/games/octordle/") {
-.dark-mode .keyboard-letter[data-v-34444897]:not(.guessed),
-stylus {
-  background: #5e666a;
-  background-image: none !important;
-}
+  .dark-mode .keyboard-letter[data-v-34444897]:not(.guessed) {
+    filter: brightness(2.2);
+  }
 
-.dark-mode .keyboard-letter.guessed[data-v-34444897] {
-  color: #e8e6e3;
-  background: #2c3032;
-  background-image: none !important;
-}
+  .dark-mode .keyboard-letter.guessed[data-v-34444897] {
+    filter: brightness(0.5);
+  }
+  .dark-mode .keyboard-letter.guessed[data-v-34444897] > .keyboard-letter-content {
+    color: white;
+  }
 }
