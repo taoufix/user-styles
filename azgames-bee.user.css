@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        AZ Games Spelling Bee Tweaks
+@namespace   https://github.com/taoufix/user-styles/azgames-bee
+@version     1.0.0
+@description Lower case letters
+@author      taoufix
+==/UserStyle== */
+
+@-moz-document url-prefix("https://azgames.io/game/bee/") {
+.cell-letter,
+.sb-hive-input {
+  font-family: serif !important;
+  text-transform: lowercase !important;
+}
+
+}
