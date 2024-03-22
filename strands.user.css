@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name        Strands Tweaks
+@namespace   https://github.com/taoufix/user-styles/strands
+@version     1.0.0
+@description Lower case letters
+@author      taoufix
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.nytimes.com/games/strands") {
+body {
+  background-color: black;
+  color: #777;
+  --blue: #339;
+  --darkreader-inline-color: #070 !important;
+}
+
+button {
+  color: #999;
+}
+}
