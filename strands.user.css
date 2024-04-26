@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Strands Tweaks
 @namespace   https://github.com/taoufix/user-styles/strands
-@version     1.0.3
+@version     1.0.4
 @description Lower case letters
 @author      taoufix
 ==/UserStyle== */
@@ -29,8 +29,8 @@ button {
   animation: none !important;
 }
 
-#hint > div {
-  display: none;
+#hint {
+  pointer-events: none;
 }
  
 }
