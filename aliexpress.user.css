@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name        AliExpress Tweaks
+@namespace   https://github.com/taoufix/user-styles/aliexpress
+@version     1.0.0
+@description Hanle annoyances from AliExpress
+@author      taoufix
+==/UserStyle== */
+
+@-moz-document domain("aliexpress.com") {
+.pop-content {
+    background: black !important;
+}
+
+.pop-close-btn {
+    background: red !important;
+}
+}
